@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  overflow: hidden;
+  background-color: #2D3039;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#wrapper {
+  max-width: 60vw;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+input {
+  padding: 0.5%;
+  font-size: 110%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px gray solid;
+  width: 20%;
+}
+
+input[type=text] {
+  width: 75%;
+}
+
+.code {
+  background-color: #e9e9e9;
+  color: #343434;
+  width: 95%;
+  padding: 1%;
+  border-radius: 5px;
+  border: solid 2px darkgray;
+  margin: 1% 0 1% 0;
+}

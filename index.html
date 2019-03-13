@@ -3,8 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>typed.js</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   </head>
   <body>
+
+    <div id="wrapper">
+      <h1 id="headline"></h1>
+      <form id="example1Form" action="index.html" method="get">
+        <h2>Placeholder Animation</h2>
+        <input type="text" name="text" value="" id="example1">
+        <input type="button" name="start" value="Start" onclick="exampleOne()">
+        <br>
+        <div class="code">
+          new Typed("#example1", { <br>
+          strings: ["everything is possible", "typed.js", "add everything!"], <br>
+          typeSpeed: 50, <br>
+          attr: 'placeholder', <br>
+          loop: true <br>
+          });
+        </div>
+      </form>
+
+      <br>
+
+      <form id="example2Form" action="index.html" method="get">
+        <h2>Text to value Animation</h2>
+        <input type="text" name="text" value="" id="exampleText">
+        <input type="button" name="start" value="Start" onclick="exampleTwo()">
+        <br><br>
+        <input type="text" name="text" value="" id="example2Out">
+        <br>
+        <div class="code">
+            new Typed("#example2Out", { <br>
+            strings: [document.getElementById('exampleText').value], <br>
+            typeSpeed: 50, <br>
+            attr: 'value' <br>
+          });
+        </div>
+      </form>
+
+      <br>
+
+      <form id="example3Form" action="index.html" method="get">
+        <h2>Shuffle Animation</h2>
+        <input type="text" name="text" value="" id="example3">
+        <input type="button" name="start" value="Start" onclick="exampleThree()">
+        <br>
+        <div class="code">
+          new Typed("#example3", { <br>
+          strings: ["create something unique", "use typed.js", "be creative"], <br>
+          typeSpeed: 50, <br>
+          attr: 'value', <br>
+          shuffle: true, <br>
+          loop: true <br>
+          });
+        </div>
+      </form>
+
+      <br>
+
+      <form id="example4Form" action="index.html" method="get">
+        <h2>Fade Out Animation</h2>
+        <input type="text" name="text" value="" id="example4">
+        <input type="button" name="start" value="Start" onclick="exampleFour()">
+        <br>
+        <div class="code">
+          new Typed("#example4", { <br>
+          strings: ["wow, that's amazing", "cool company", "try out something new"], <br>
+          typeSpeed: 50, <br>
+          attr: 'value', <br>
+          loop: true, <br>
+          fadeOut: true <br>
+          });
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>
