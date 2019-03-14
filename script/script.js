@@ -2,7 +2,6 @@ window.addEventListener('load', function() {
   new Typed("#headline", {
     strings: ["Typed.js example"],
     typeSpeed: 50,
-    cursorChar: '',
   });
 });
 
