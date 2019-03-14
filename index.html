@@ -34,7 +34,7 @@
         <input type="text" name="text" value="" id="exampleText">
         <input type="button" name="start" value="Start" onclick="exampleTwo()">
         <br><br>
-        <input type="text" name="text" value="" id="example2Out">
+        <input type="text" name="text" value="" id="example2">
         <br>
         <div class="code">
             new Typed("#example2Out", { <br>
@@ -67,18 +67,18 @@
       <br>
 
       <form id="example4Form" action="index.html" method="get" style="margin-bottom: 10%">
-        <h2>Fade Out</h2>
+        <h2>Delay</h2>
         <input type="text" name="text" value="" id="example4">
         <input type="button" name="start" value="Start" onclick="exampleFour()">
         <br>
         <div class="code">
           new Typed("#example4", { <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;strings: ["wow, that's amazing", "Try it out!", "try out something new"], <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;typeSpeed: 50, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;backSpeed: 50, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;attr: 'value', <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;loop: true, <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;fadeOut: true <br>
+          strings: ["wow, that's amazing^2000", "Try it out!^1500", "try out something new^100"], <br>
+          typeSpeed: 50, <br>
+          backSpeed: 50, <br>
+          backDelay: 500, <br>
+          attr: 'value', <br>
+          loop: true, <br>
           });
         </div>
       </form>
