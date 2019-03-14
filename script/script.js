@@ -1,9 +1,9 @@
 window.addEventListener('load', function() {
   new Typed("#headline", {
-    strings: ["typed.js example", "it animtiso", "it animates text", "Try it out!"],
+    strings: ["typed.js example^750", "it animarw", "it animates text^1000", "Try it out!^750", "Typed.js"],
     typeSpeed: 45,
-    backSpeed: 20,
-    backDelay: 200,
+    backSpeed: 15,
+    backDelay: 25,
     });
 });
 
@@ -13,12 +13,12 @@ function exampleOne() {
     typeSpeed: 50,
     backSpeed: 50,
     attr: 'placeholder',
-    loop: true
+    loop: true,
   });
 }
 
 function exampleTwo() {
-  new Typed("#example2Out", {
+  new Typed("#example2", {
     strings: [document.getElementById('exampleText').value],
     typeSpeed: 50,
     attr: 'value',
@@ -38,11 +38,11 @@ function exampleThree() {
 
 function exampleFour() {
   new Typed("#example4", {
-    strings: ["wow, that's amazing", "Try it out!", "try out something new"],
+    strings: ["wow, that's amazing^2000", "Try it out!^1500", "try out something new^100"],
     typeSpeed: 50,
     backSpeed: 50,
+    backDelay: 500,
     attr: 'value',
     loop: true,
-    fadeOut: true
   });
 }
