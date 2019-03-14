@@ -2,7 +2,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: monospace;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #2D3039;
   display: flex;
   justify-content: center;
@@ -26,8 +26,8 @@ input {
   padding: 0.5%;
   font-size: 110%;
   outline: none;
-  border-radius: 10px;
-  border: 2px gray solid;
+  border-radius: 6px;
+  border: 1px gray solid;
   width: 20%;
 }
 
@@ -35,12 +35,18 @@ input[type=text] {
   width: 75%;
 }
 
+span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
 .code {
-  background-color: #e9e9e9;
+  background-color: #F8F8F8;
   color: #343434;
   width: 95%;
   padding: 1%;
   border-radius: 5px;
-  border: solid 2px darkgray;
+  border: solid 1.5px #a7a1a1;
   margin: 1% 0 1% 0;
 }
