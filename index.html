@@ -18,11 +18,11 @@
         <br>
         <div class="code">
           new Typed("#example1", { <br>
-          strings: ["everything is possible", "typed.js", "add everything!"], <br>
-          typeSpeed: 50, <br>
-          backSpeed: 50, <br>
-          attr: 'placeholder', <br>
-          loop: true <br>
+            strings: ["typed.js is a library", "made by matt boldt", "it'6 years old"], <br>
+            typeSpeed: 50, <br>
+            backSpeed: 50, <br>
+            attr: 'placeholder', <br>
+            loop: true, <br>
           });
         </div>
       </form>
@@ -66,7 +66,7 @@
 
       <br>
 
-      <form id="example4Form" action="index.html" method="get" style="margin-bottom: 10%">
+      <form id="example4Form" action="index.html" method="get">
         <h2>Delay</h2>
         <input type="text" name="text" value="" id="example4">
         <input type="button" name="start" value="Start" onclick="exampleFour()">
@@ -79,6 +79,24 @@
           backDelay: 500, <br>
           attr: 'value', <br>
           loop: true, <br>
+          });
+        </div>
+      </form>
+
+      <br>
+
+      <form id="example5Form" action="index.html" method="get" style="margin-bottom: 10%">
+        <h2>Text</h2>
+        <span id="example5" id="exampleSpan"></span>
+        <br> <br>
+        <input type="button" name="start" value="Start" onclick="exampleFive()">
+        <br>
+        <div class="code">
+          new Typed("#example5", { <br>
+            strings: ["This is typed.js", "it writes text", ""], <br>
+            typeSpeed: 50, <br>
+            backSpeed: 50, <br>
+            cursorChar: '_' <br>
           });
         </div>
       </form>

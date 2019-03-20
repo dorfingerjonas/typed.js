@@ -17,6 +17,10 @@ span {
   font-size: 300%;
 }
 
+#example5Form span {
+  font-size: 150%;
+}
+
 h2 {
   font-size: 175%;
 }

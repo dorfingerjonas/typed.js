@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 
 function exampleOne() {
   new Typed("#example1", {
-    strings: ["Grüß Gott", "mein Name lautet Philipp Edlinger", "und ich möchte Sie herzlich zu meiner Website", "über eines der ikonischten Tiere Asiens begrüßen", "den PANDA!"],
+    strings: ["typed.js is a library", "made by matt boldt", "it'6 years old"],
     typeSpeed: 50,
     backSpeed: 50,
     attr: 'placeholder',
@@ -44,5 +44,14 @@ function exampleFour() {
     backDelay: 500,
     attr: 'value',
     loop: true,
+  });
+}
+
+function exampleFive() {
+  new Typed("#example5", {
+    strings: ["This is typed.js", "it writes text", ""],
+    typeSpeed: 50,
+    backSpeed: 50,
+    cursorChar: '_'
   });
 }
